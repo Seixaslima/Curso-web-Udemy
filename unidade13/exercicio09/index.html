@@ -1,13 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Curso HTML5 Essencial</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curso HTML5 Essencial</title>
 
-    <body>
-        <form action="index.html" method="post">
-            
-        </form>
-    </body>
+    <script>
+      function escreveResultado() {
+        document.getElementById('resultado').innerHTML =
+          document.getElementById('filhos').value
+      }
+    </script>
+  </head>
+
+  <body onload="escreveResultado()">
+    <form action="index.html" method="post">
+      <input
+        type="range"
+        name="filhos"
+        id="filhos"
+        min="1"
+        max="10"
+        value="1"
+        onchange="escreveResultado()"
+      />
+      <span id="resultado"></span>
+    </form>
+  </body>
 </html>

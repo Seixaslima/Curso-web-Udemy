@@ -1,13 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Curso HTML5 Essencial</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curso HTML5 Essencial</title>
+  </head>
 
-    <body>
-        <form action="index.html" method="post">
-            
-        </form>
-    </body>
+  <body>
+    <form action="index.html" method="post">
+      <input
+        type="text"
+        placeholder="nome de loja"
+        size="40"
+        id="nome_lojas"
+        name="nome_lojas"
+        list="lojas"
+      />
+      <datalist id="lojas">
+        <option value="Centauro">Centauro</option>
+        <option value="magazine luiza">magazine Luiza</option>
+        <option value="Mcdonald">Mcdonald</option>
+        <option value="centro otico"></option>
+      </datalist>
+    </form>
+  </body>
 </html>
