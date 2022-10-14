@@ -1,32 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Curso de CSS</title>
-        <style>
-            body {
-                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-                font-size:14px;
-            }
-        </style>
+  <head>
+    <meta charset="utf-8" />
+    <title>Curso de CSS</title>
+    <style>
+      body {
+        font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
 
-        <body>
+      ul,
+      ol {
+        background-color: violet;
+      }
+      li {
+        background-color: aquamarine;
+      }
+      .l2 li {
+        list-style-position: inside;
+      }
 
-            <ul>
-                <li>Brasil</li>
-                <li>Portugal</li>
-                <li>Angola</li>
-                <li>Moçambique</li>
-                <li>Cabo Verde</li>
-            </ul>
+      .l3 li {
+        list-style-type: lower-roman;
+      }
 
-            <ol>
-                <li>Brasil</li>
-                <li>Portugal</li>
-                <li>Angola</li>
-                <li>Moçambique</li>
-                <li>Cabo Verde</li>
-            </ol>    
+      .l4 li {
+        list-style: none;
+      }
 
-        </body>
+      .l5 {
+        padding: 0;
+      }
+
+      .l5 li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Brasil</li>
+      <li>Portugal</li>
+      <li>Angola</li>
+      <li>Moçambique</li>
+      <li>Cabo Verde</li>
+    </ul>
+
+    <ol class="l2">
+      <li>Brasil</li>
+      <li>Portugal</li>
+      <li>Angola</li>
+      <li>Moçambique</li>
+      <li>Cabo Verde</li>
+    </ol>
+
+    <ol class="l3">
+      <li>Brasil</li>
+      <li>Portugal</li>
+      <li>Angola</li>
+      <li>Moçambique</li>
+      <li>Cabo Verde</li>
+    </ol>
+
+    <ol class="l4">
+      <li>Brasil</li>
+      <li>Portugal</li>
+      <li>Angola</li>
+      <li>Moçambique</li>
+      <li>Cabo Verde</li>
+    </ol>
+    <ol class="l5">
+      <li>Brasil</li>
+      <li>Portugal</li>
+      <li>Angola</li>
+      <li>Moçambique</li>
+      <li>Cabo Verde</li>
+    </ol>
+  </body>
 </html>
