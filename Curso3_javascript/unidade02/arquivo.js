@@ -1,2 +1,2 @@
 // JavaScript Document
-alert("ola mundo");
+alert('ola mundo')
