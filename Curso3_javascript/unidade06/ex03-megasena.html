@@ -1,11 +1,24 @@
 <html>
-    <head>
-        <title>Aulas de Javascript</title>
-        <script>
+  <head>
+    <title>Aulas de Javascript</title>
+    <script>
+      function ordenaInteiro(a, b) {
+        return a - b
+      }
+      var sorteado
+      var mega = new Array()
 
-        </script>
-    </head>
-    <body>
-        
-    </body>
+      var i = 0
+      while (i < 6) {
+        sorteado = Math.ceil(Math.random() * 60)
+        if (mega.indexOf(sorteado) < 0) {
+          mega.push(sorteado)
+          i++
+        }
+      }
+      mega.sort(ordenaInteiro)
+      console.log(mega)
+    </script>
+  </head>
+  <body></body>
 </html>
