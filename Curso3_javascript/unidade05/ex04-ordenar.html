@@ -1,15 +1,30 @@
 <html>
-    <head>
-        <title>Aulas de Javascript</title>
-        <script>
-            var salada = new Array();
-            salada[0] = "Uva";
-            salada[1] = "Mamão";
-            salada[2] = "Pêra";
-            salada[3] = "Maçã";        
-        </script>
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <title>Aulas de Javascript</title>
+    <script>
+      function ordenaNumeros(a, b) {
+        return a - b
+      }
+
+      var salada = new Array()
+      salada[0] = 'Uva'
+      salada[1] = 'Mamão'
+      salada[2] = 'Pêra'
+      salada[3] = 'Maçã'
+      console.log('array desordenado')
+      console.log(salada)
+      salada.sort()
+      console.log('array ordenado')
+      console.log(salada)
+      var numeros = [10, 65, 83, 21, 3, 2]
+      console.log(numeros)
+      numeros.sort()
+      console.log('array ordenado')
+      console.log(numeros)
+      numeros.sort(ordenaNumeros)
+      console.log('array ordenado')
+      console.log(numeros)
+    </script>
+  </head>
+  <body></body>
 </html>
