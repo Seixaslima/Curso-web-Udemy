@@ -1,11 +1,17 @@
 <html>
-    <head>
-        <title>Aulas de Javascript</title>
-        <script>
-
-        </script>
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <title>Aulas de Javascript</title>
+    <script>
+      var nome = 'lucas SEIXAS'
+      var nome_minusculo = nome.toLowerCase()
+      var nomes = nome_minusculo.split(' ')
+      var nome_maiusculo = ''
+      for (var i = 0; i < nomes.length; i++) {
+        nome_maiusculo +=
+          nomes[i][0].toUpperCase() + nomes[i].substr(1, nomes[i].length) + ' '
+      }
+      console.log(nome_maiusculo)
+    </script>
+  </head>
+  <body></body>
 </html>
