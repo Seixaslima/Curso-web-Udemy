@@ -1,11 +1,17 @@
 <html>
-    <head>
-        <title>Aulas de Javascript</title>
-        <script>
+  <head>
+    <title>Aulas de Javascript</title>
+    <script>
+      var produto = { nome: 'Caneta', valor: 1.99, cor: 'Azul' }
 
-        </script>
-    </head>
-    <body>
-        
-    </body>
+      function retornaInfo() {
+        return 'O produto ' + this.nome + ' Custa: ' + this.valor
+      }
+
+      produto.info = retornaInfo
+
+      alert(produto.info())
+    </script>
+  </head>
+  <body></body>
 </html>
