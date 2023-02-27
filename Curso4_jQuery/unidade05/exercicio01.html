@@ -1,26 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Curso jQuery Fundamental</title>
-        <style>
-			#janela { width:200px; height:200px; background-color:#069; border:5px solid #000 }
-		</style>
-        
-        <script src="jquery-3.2.1.min.js"></script>
-        <script>
-			jQuery(document).ready(function() {
-						
-			});
-		</script>        
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curso jQuery Fundamental</title>
+    <style>
+      #janela {
+        width: 200px;
+        height: 2000px;
+        background-color: #069;
+        border: 5px solid #000;
+      }
+    </style>
 
-    <body>
-		
-        <div id="janela">
-        
-        </div>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        console.log('A largura da janela é de: ' + $(window).width())
+        console.log('A Altura da janela é de: ' + $(window).height())
 
-    </body>
+        console.log('A largura do documento é de: ' + $(document).width())
+        console.log('A Altura do documento é de: ' + $(document).height())
+      })
+    </script>
+  </head>
 
+  <body>
+    <div id="janela"></div>
+  </body>
 </html>
