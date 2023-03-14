@@ -10,33 +10,43 @@
     <body>
         <!-- Digite abaixo seu codigo -->
         <div class="container">
-            <form>
-                <label for="nome">Nome Completo</label>
-                <input type="text" id="nome" placeholder="Nome"/>
-
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Email"/>
+            <form >
+                <div class="mb-3">
+                    <label for="nome">Nome Completo</label>
+                    <input  class="form-control" type="text" id="nome" placeholder="Nome"/>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input class="form-control"  type="text" id="email" placeholder="Email"/>
+                </div>
                 
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="Senha"/>  
+                <div class="mb-3">
+                    <label for="senha">Senha</label>
+                    <input class="form-control"  type="password" id="senha" placeholder="Senha"/>  
+                </div>
                 
-                <label for="selecao">Prato preferido?</label>
-                <select id="selecao">
-                    <option>Escolha uma opção</option>
-                    <option>Feijoada</option>
-                    <option>Churrasco</option>
-                    <option>Sushi</option>
-                    <option>Pizza</option>
-                </select>
+                <div class="mb-3">
+                    <label for="selecao">Prato preferido?</label>
+                    <select class="form-select"  id="selecao">
+                        <option>Escolha uma opção</option>
+                        <option>Feijoada</option>
+                        <option>Churrasco</option>
+                        <option>Sushi</option>
+                        <option>Pizza</option>
+                    </select>
+                </div>
                 
-                <label for="comentario">Comentários</label>
-                <textarea id="comentario"></textarea>
+                <div class="mb-3">
+                    <label for="comentario">Comentários</label>
+                    <textarea class="form-control"  id="comentario"></textarea>
+                </div>
                 
-                <label for="lista">
-                    <input type="checkbox" id="lista">Inscrever-me na newsletter
-                </label>
+                <div class="mb-3 form-check">
+                    <label class="form-check-label" for="lista"> </label>
+                    <input class="form-check-input" type="checkbox" id="lista">Inscrever-me na newsletter
+                </div>
                 
-                <input type="submit" value="Enviar">
+                <input class="btn btn-dark" type="submit" value="Enviar">
             </form>
         </div>
         <!-- Fim do seu codigo -->
