@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Curso de EcmaScript 6.0</title>
+
+    <script type="text/javascript">
+      function* baterNoLiquidificador(ing) {
+        for (var i = 0; i < ing.length; i++) {
+          yield ing[i]
+        }
+      }
+
+      var ingredientes = baterNoLiquidificador([
+        'Leite',
+        'banana',
+        'Toddy',
+        'Aveia'
+      ])
+
+      var fazerVitamina = setInterval(function () {
+        var vitamina = ingredientes.next()
+        if (vitamina.done) {
+          clearInterval(fazerVitamina)
+          console.log('A vitamina está pronta')
+        } else {
+          console.log('Colocando ' + vitamina.value)
+        }
+      }, 1000)
+    </script>
+  </head>
+  <body></body>
+</html>
